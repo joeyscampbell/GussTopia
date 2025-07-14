@@ -1,0 +1,31 @@
+.home-interactions {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.quick-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.quick-links a {
+  background: var(--accent-blue);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: black;
+  text-decoration: none;
+  box-shadow: 0 0 5px var(--accent-blue);
+  transition: box-shadow 0.3s, background 0.3s;
+}
+
+.quick-links a:hover {
+  background: var(--accent-pink);
+  box-shadow: 0 0 10px var(--accent-pink);
+}

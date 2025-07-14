@@ -1,10 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './GamesSection.css';
 
 const initialGames = [];
 
 const GamesSection = () => {
   const [games, setGames] = useState(initialGames);
+  useEffect(() => {
+    const saved = localStorage.getItem('games');
+    if (saved) setGames(JSON.parse(saved));
+  }, []);
+  useEffect(() => {
+    localStorage.setItem('games', JSON.stringify(games));
+  }, [games]);
   const [showForm, setShowForm] = useState(false);
   const [formData, setFormData] = useState({ title: '', cover: '', comment: '' });
 
@@ -16,7 +23,7 @@ const GamesSection = () => {
   };
 
   return (
-    <section className="games">
+    <section className="games" data-aos="fade-up">
       <h2>Games</h2>
       <button onClick={() => setShowForm(true)}>Add Game</button>
       {showForm && (
