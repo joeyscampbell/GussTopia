@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: white;
+}
+
+main {
+  padding: 1rem;
+}
+
+button {
+  background-color: var(--accent-blue);
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-heading);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--accent-pink);
+}
