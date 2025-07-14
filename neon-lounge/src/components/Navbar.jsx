@@ -20,7 +20,6 @@ const Navbar = () => {
         <li><Link to="/videos">Videos</Link></li>
         <li><Link to="/music">Music</Link></li>
         <li><Link to="/friends">Friends</Link></li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   );

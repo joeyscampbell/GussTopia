@@ -18,8 +18,11 @@ button {
   padding: 0.5rem 1rem;
   font-family: var(--font-heading);
   cursor: pointer;
+  box-shadow: 0 0 5px var(--accent-blue);
+  transition: background 0.3s, box-shadow 0.3s;
 }
 
 button:hover {
   background-color: var(--accent-pink);
+  box-shadow: 0 0 10px var(--accent-pink), 0 0 20px var(--accent-pink);
 }

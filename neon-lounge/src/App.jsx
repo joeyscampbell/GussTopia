@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+import HomeInteractions from './components/HomeInteractions';
 import GamesSection from './components/GamesSection';
 import VideosSection from './components/VideosSection';
 import MusicSection from './components/MusicSection';
@@ -14,7 +14,7 @@ const App = () => (
     <Navbar />
     <main>
       <Routes>
-        <Route path="/" element={<Hero />} />
+        <Route path="/" element={<HomeInteractions />} />
         <Route path="/games" element={<GamesSection />} />
         <Route path="/videos" element={<VideosSection />} />
         <Route path="/music" element={<MusicSection />} />

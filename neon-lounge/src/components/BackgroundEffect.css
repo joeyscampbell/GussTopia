@@ -1,0 +1,22 @@
+.background-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), var(--accent-blue), var(--accent-pink));
+  animation: background-move 10s infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes background-move {
+  from {
+    --x: 20%;
+    --y: 80%;
+  }
+  to {
+    --x: 80%;
+    --y: 20%;
+  }
+}
