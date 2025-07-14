@@ -1,0 +1,14 @@
+.friends-feed {
+  padding: 2rem 0;
+}
+
+.friends-feed ul {
+  list-style: none;
+  padding: 0;
+}
+
+.friends-feed li {
+  margin-bottom: 0.5rem;
+  background-color: #111;
+  padding: 0.5rem;
+}
